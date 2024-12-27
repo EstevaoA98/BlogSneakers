@@ -1,3 +1,97 @@
-body{
-    background-color: white;
+/*css da pag toda*/
+*{
+    font-family: 'Roboto', Roboto Slab;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+ }
+html {
+    min-height: 100vh;
+    position: relative;
+}
+main {
+    margin-bottom: 250px;
+}
+
+/*NavBar*/
+#logo {
+    position: absolute;
+    top: 4px;
+    left: 25%;
+   
+}
+
+#logo img{
+    width: 85px;
+    height: 85px;
+    
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#333333;
+    padding: 20px;
+    text-transform:none;
+    list-style: none;
+    font-family:'roboto', sans-serif;
+    
+}
+#navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+#navbar li{
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 9%;
+    border: 2px solid white;
+
+}
+#navbar .nav-link{
+    color: white;
+    text-decoration: none;
+    transition: 5s;
+    font-size: 14px;
+}
+#navbar .nav-link:hover{
+    color: #f2f2f2;
+}
+/*home*/
+#title-conteiner{
+   min-width: 500px;
+   text-align: center;
+   margin:30px;
+}
+
+#title-conteiner h1{
+    font-size: 50px;
+    color: #333333;
+    margin: 20px;
+}
+#title-conteiner p{
+    font-size: 20px;
+    color: #333333;
+    margin: 15px;
+    text-transform:lowercase;
+}
+#post-conteiner{
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+/*footer*/
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 35px;
 }

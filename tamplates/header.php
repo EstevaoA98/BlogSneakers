@@ -1,5 +1,7 @@
 <?php
 include("helpers/url.php");
+include("data/posts.php");
+include("data/categories.php");
 ?>
 
 <!DOCTYPE html>
