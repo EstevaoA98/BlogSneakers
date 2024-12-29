@@ -42,7 +42,10 @@ main {
     text-decoration: none;
     padding: 10px;
     font-size: 20px;
-    transition: 0.5s;
+    transition: 0.1s;
+}
+#navbar a:hover{
+    color: #666;
 }
 #navbar li{
     margin: 0 10px;
@@ -84,6 +87,44 @@ main {
     flex-wrap: wrap;
     margin: 0 auto;
     margin-top: 30px;
+    flex-wrap: wrap;
+}
+.post-box:first-child{
+    flex:100%;
+}
+.post-box{
+    flex: 1 1 0;
+    margin: 0 1%;
+    margin-bottom: 20px;
+}
+.post-box img{
+    width: 100%;
+    
+}
+.post-box .post-title{
+    font-size: 24px;
+    color: #333333;
+    margin: 10px 0;
+}
+.post-box .post-title a{
+    color: #333333;
+    transition: 0.1s;
+}
+.post-box .post-title a:hover{
+    color: #999;
+}
+.post-box .post-description{
+    font-size: 16px;
+    color: #666;
+}
+.tags-conteiner{
+    margin: 20px 0;
+}
+.tags-conteiner a{
+   font-size: 14px;
+   color: #333333;
+   display: inline-block;
+   margin-right: 5px;
 }
 /*footer*/
 footer{
