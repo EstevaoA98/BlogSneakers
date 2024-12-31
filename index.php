@@ -6,7 +6,7 @@ include_once("tamplates/header.php");
         <h1>Blog sneaker</h1>
         <p>Blog for sneaker lovers</p>
     </div>
-    <div id="post-conteiner">
+    <div id="posts-conteiner">
         <?php foreach($posts as $post): ?>
             <div class="post-box">
                 <img src="<?= $BASE_URL ?>/img/<?= $post['img'] ?>" alt="<?= $post['title'] ?>">

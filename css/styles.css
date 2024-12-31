@@ -69,6 +69,13 @@ main {
    text-align: center;
    margin:30px;
 }
+#posts-conteiner{
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 30px;
+}
 
 #title-conteiner h1{
     font-size: 50px;
@@ -81,14 +88,7 @@ main {
     margin: 15px;
     text-transform:lowercase;
 }
-#post-conteiner{
-    max-width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    margin-top: 30px;
-    flex-wrap: wrap;
-}
+
 .post-box:first-child{
     flex:100%;
 }
@@ -115,7 +115,7 @@ main {
 }
 .post-box .post-description{
     font-size: 16px;
-    color: #666;
+    color: #999;
 }
 .tags-conteiner{
     margin: 20px 0;
@@ -126,6 +126,66 @@ main {
    display: inline-block;
    margin-right: 5px;
 }
+/*post*/
+#post-conteiner{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns:90% 10%;
+    grid-template-areas:"main sidebar";
+    grid-template-rows:auto;
+    padding-top: 3%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 250px;
+}
+.content-conteiner{
+    grid-area: main;
+}
+#main-title{
+    font-size: 45px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+#post-description{
+    font-style: italic;
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 40px;
+}
+.post-content{
+    margin: 10px 0;
+    line-height: 1.5;
+}
+.img-conteiner{
+    margin-bottom: 30px;
+}
+.img-conteiner img{
+    width: 60%;
+}
+/*post asisde*/
+.nav-conteiner{
+    grid-area: sidebar;
+
+}
+#nav-title, #categories-title{
+    font-size: 15px;
+    background-color: #333333;
+    margin-bottom: 5px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 30% 15%;
+
+}
+#tag-list a, #categories-list a{
+   color: #999;
+   transition: 0.2s;
+}
+#tag-list a:hover, #categories-list a:hover{
+    color: #000;
+    transition: 0.1s;
+ }
 /*footer*/
 footer{
     position: absolute;
