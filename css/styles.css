@@ -5,7 +5,9 @@
     margin:0;
     box-sizing: border-box;
  }
-html {
+ html, body {
+    width: 100%;
+    overflow-x: hidden;
     min-height: 100vh;
     position: relative;
 }
@@ -35,7 +37,6 @@ main {
     text-transform:none;
     list-style: none;
     font-family:'roboto', sans-serif;
-    
 }
 #navbar a{
     color: white;
@@ -65,7 +66,7 @@ main {
 }
 /*home*/
 #title-conteiner{
-   min-width: 500px;
+   min-width: auto;
    text-align: center;
    margin:30px;
 }
@@ -134,7 +135,6 @@ main {
     grid-template-areas:"main sidebar";
     grid-template-rows:auto;
     padding-top: 3%;
-    max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 250px;
 }
@@ -196,3 +196,88 @@ footer{
     text-align: center;
     padding: 35px;
 }
+/*responsive*/
+@media (max-width: 1200px) {
+    #title-conteiner h1 {
+        font-size: 40px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #title-conteiner p {
+        font-size: 18px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .post-box {
+        flex: 1 1 calc(50% - 2%);
+    }
+    #post-conteiner {
+        grid-template-columns: 1fr;
+        grid-template-areas: "main" "sidebar";
+    }
+    .img-conteiner img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    #logo img {
+        width: 60px;
+        height: 60px;
+    }
+    #navbar {
+        flex-wrap: wrap;
+    }
+    #title-conteiner h1 {
+        font-size: 32px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #title-conteiner p {
+        font-size: 16px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .post-box {
+        flex: 1 1 calc(100% - 2%);
+    }
+    .img-conteiner img {
+        width: 90%;
+    }
+    #post-conteiner {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    #navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    #navbar li {
+        margin: 5px 0;
+    }
+    #title-conteiner h1 {
+        font-size: 28px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #title-conteiner p {
+        font-size: 14px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .post-box .post-title {
+        font-size: 20px;
+    }
+    .post-box .post-description {
+        font-size: 14px;
+    }
+    .img-conteiner img {
+        width: 100%;
+    }
+    footer {
+        padding: 20px;
+    }
+}
+

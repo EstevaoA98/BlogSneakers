@@ -6,7 +6,7 @@
             'title' => 'Nike Air Max 1',
             'category' => 'Sneakers',
             'description' => 'The Nike Air Max 1 was Tinker Hatfield\'s first Nike Air design. It is the first sneaker to feature visible Max Air and debuted in 1987. It is considered by many to be one of the greatest sneakers in history.',
-            'img' => 'nike-air-max-1.jpg',
+            'img' => 'nike-air-max-1-.jpg',
             'tags'=> ['Nike', 'Air Max', 'Sneakers']
         ],
         [   
